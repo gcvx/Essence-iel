@@ -1,23 +1,47 @@
-# ✨ Welcome to Your Spark Template!
-You've just launched your brand-new Spark Template Codespace — everything’s fired up and ready for you to explore, build, and create with Spark!
 
-This template is your blank canvas. It comes with a minimal setup to help you get started quickly with Spark development.
+# Essence-iel
 
-🚀 What's Inside?
-- A clean, minimal Spark environment
-- Pre-configured for local development
-- Ready to scale with your ideas
-  
-🧠 What Can You Do?
+**Visualiseur de Données des Stations-Service**
 
-Right now, this is just a starting point — the perfect place to begin building and testing your Spark applications.
+Essence-iel is a modern web application for exploring, visualizing, and analyzing fuel station data in France. It provides interactive maps, statistics, and filtering tools to help users find the best fuel prices and station features.
 
-🧹 Just Exploring?
-No problem! If you were just checking things out and don’t need to keep this code:
+## Features
+- Interactive map of fuel stations (Leaflet)
+- Price distribution charts and statistics (Recharts)
+- Advanced filtering by location, fuel type, price, and services
+- Top N stations by price or distance
+- Responsive UI with Radix UI and TailwindCSS
+- French localization
 
-- Simply delete your Spark.
-- Everything will be cleaned up — no traces left behind.
+## Tech Stack
+- React 19 + TypeScript
+- Vite (bundler)
+- TailwindCSS (custom theming)
+- Radix UI, Lucide Icons, Phosphor Icons
+- Leaflet (maps), Recharts (charts)
+- Zod (validation)
+- Spark (GitHub integration)
 
-📄 License For Spark Template Resources 
+## Getting Started
+1. **Install dependencies:**
+	```bash
+	npm install
+	```
+2. **Start development server:**
+	```bash
+	npm run dev
+	```
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-The Spark Template files and resources from GitHub are licensed under the terms of the MIT license, Copyright GitHub, Inc.
+## Project Structure
+- `src/` — Main source code
+  - `components/` — UI and feature components
+  - `lib/` — Data services, utilities, translations
+  - `types/` — TypeScript types
+  - `styles/` — Custom CSS themes
+
+## Data Source
+Fuel price and station data is fetched from [roulez-eco.fr](https://donnees.roulez-eco.fr/opendata/instantane).
+
+## License
+MIT License. See `LICENSE` for details.
